@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* reset */
+html, body{ position:relative; width:100%; height:100%; }
+*{ margin:0; padding:0; box-sizing:border-box; }
+ul, ol{ list-style:none; }
+html,body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,table,th,td{margin:0;padding:0;font-weight:normal}
+body, xmp, code{ font-family:'Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;font-size:13px;line-height:1.4;color:#333;white-space: normal;word-break:break-all}
+button{margin:0;padding:0;border:0;background:none;width:auto;font-family:'Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim, helvetica, Apple SD Gothic Neo, sans-serif;cursor:pointer}
+a, a:link, a:visited, a:active{ text-decoration:none; color:#333; }
+a, button, input{ -webkit-tap-highlight-color:transparent; -webkit-tap-highlight-color:rgba(0, 0, 0, 0); } /* 하이라이트 제거 */
+button{ cursor: pointer; }
+img{ width: 100%; max-height: 100%; }
+h1, h2, h3, h4{ font-weight:bold; padding:10px 0; font-weight:bold; }
+h1{ font-size:20px; text-align: center; }
+h2{ font-size:17px; text-align: left; }
+h3{ font-size:15px; text-align: left; }
+h4{ font-size:14px; text-align: left; }
+input{ color: #333; }
+iframe{ width: 100%; max-height: 100%; aspect-ratio: 1/.562; }
+
+/* common */
+.hidden1{ display:block; width:100%; text-indent:-9999px; }
+.hidden2{ position:absolute; top:0; left: 0; display:block; width:100%; height:20px; text-indent:-9999px; }
+.hidden3{ width:100%; height:1px; padding: 0; line-height:1px; font-size:1px; margin-top:-2px; opacity:0; overflow:hidden; }
+.hidden4{ display: none; }
+.clearfix::after{content:"";display:block;clear:both;zoom:1}
+
+table.type1{ position:relative; width:100%; height:auto; table-layout:fixed; border-collapse:collapse; }
+table.type1 th, table.type1 td{ border:1px solid gray; padding:3px; line-height:100%; }
+table.type1 th{ background-color:#eee; }
+
+.ul_list{  }
+.ul_list li{ position: relative; display: block; width: 100%; padding: 0 10px 5px; }
+.ul_list li::before{ position: absolute; top: 3px; left: 0; content: "●"; font-size: 6px; }
+.ol_list{ list-style: decimal; margin:10px 23px 0; }
+.ol_list_pop{ list-style: decimal; margin:10px 15px 0; }
+
+/*:focus-visible{ outline: 2px solid #333; border-radius: 3px; outline-offset: -2px; }*/ /* 키보드 전용 */
+
+.heading{ border-bottom: 1px solid gray; }
+.container{  }
+
+.container > .summary{ width: 100%; padding: 15px 0; }
+.container > .section{  }
+.container > .section > .article{  }
+.container > .section > .article > .aside{  }
+.container > .section > .article > .aside > .cnt{ padding: 50px 30% 0; }
+
+
+/* index */
+.sample_list{ margin: 30px 20% 0; }
+.sample_board .col1{ width: 5%; }
+.sample_board .col2{ width: 20%; }
+.sample_board .col3{ width: 35%; }
+.sample_board .col4{ width: 10%; }
+.sample_board .col5{ width: auto; }
+.sample_board th{ height: 35px; font-weight: bold; }
+.sample_board td{ height: 25px; }
+.sample_board td.num, .sample_board td.pdf{ text-align: center; }
+
+
+/* 3. 색에 무관한 콘텐츠 인식 */
+.color_vision .url{ height: 400px; aspect-ratio: initial; }
+
+
+/* 6. 알림 기능 */
+.alert .number{ text-align: center; }
+.alert .number .btn_certify{ display: inline-block; border: 1px solid #ccc; border-radius: 5px; width: 100px; height: 30px; }
+.alert .message{ display: none; margin-top: 20px; padding: 10px 10px; background-color: #504C51; color: #fff; text-align: center;}
+.alert .message.on{ display: block; }
+
+
+/* 7. 초점 */
+.focus .title{ display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; }
+.focus .title .btn{ padding-right: 7px; }
+.focus .title button{ width: 20px; height: 20px; text-indent: -9999px; background: url('../img/7-3.jpg') no-repeat 50% 50%/10px auto; overflow: hidden; }
+.focus .title button.on{ background-image: url('../img/7-4.jpg'); }
+.focus .list{ padding: 5px 0; }
+.focus .list ul li{ display: flex; justify-content: space-between; height: 35px; }
+.focus .list ul li .address{ flex-grow: 1; }
+.focus .list ul li .address button{ display: flex; width: 100%; }
+.focus .list ul li .address button span{ display: block; text-align: left; }
+.focus .list ul li .address button .thumb{ width: 35px; height: 35px; }
+.focus .list ul li .address button .phone{ padding: 0 10px; }
+.focus .list ul li .call{ width: 35px; }
+.focus .list ul li .call .btn_call{ display: inline-block; width: 100%; height: 100%; background:url('../img/7_2.jpg') no-repeat 0 0/35px 35px; text-indent: -9999px; overflow: hidden; }
+
+/* 12.입력도움 */
+.write{  }
+.write div{ display: flex; margin-bottom: 10px; padding: 0 10px; align-items: center; }
+.write label{ margin-right: 5px; }
+.write input{ padding: 3px 3px; flex-grow: 1; }
+
+.search div{ display: flex; margin-bottom: 10px; padding: 0 10px; align-items: center; }
+.search .word{ position: relative; }
+.search button{ position: absolute; top: 10px; left: 30px; display: block; margin-right: 10px; width: 10px; height: 15px; background:url('../img/12_6.jpg') no-repeat 0 0/10px 15px; text-indent: -9999px; overflow: hidden; }
+.search input{ border-radius: 15px; padding: 9px 35px; flex-grow: 1; }
+
+/* 18. 보조기술과의 호환성 : 체크상자 */
+.check_list .title{ padding: 1px 0 10px 0; }
+.check_list .check_box{ display: flex; align-items: center; }
+.check_list .check_box input{ margin-right: 3px; }
+.check_list ul li{ display: flex; padding-bottom: 5px; justify-content: space-between; }
+.check_list ul li .btn_detail{ display: block; width: 30px; background: url('../img/18_2.jpg') no-repeat 50% 50%/10px 15px; text-indent: -9999px; overflow: hidden; }
+
+/* 18. 보조기술과의 호환성 : 레이어팝업 */
+#dialog{ position: fixed; bottom: 0; left: 0; display: none; height: 100%; width: 100%; padding: 10px; z-index: 10000; overflow: hidden; background-color:#fff; }
+#dialog .dialog_title{ display: flex; padding: 10px 0; justify-content: center; }
+#dialog .dialog_title h1{ width: 100%; font-size: 17px; }
+#dialog .dialog_content{ display: block; width: 100%; height: 100%; padding: 20px; overflow-y: scroll; }
+#dialog .dialog_content .list{ padding-bottom: 10px; }
+#dialog .dialog_content .list ol li{ padding-bottom: 5px; }
+#dialog .dialog_bottom .btn_close{ position: absolute; top: 33px; right: 20px; display: block; width: 15px; height: 15px; overflow: hidden; text-indent: -9999px; background: url("../img/18_3.jpg") no-repeat; }
+#dimmed{ position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: none; width: 100%; height: 100%; background-color: #000; opacity: .3; }
+
+
+/* 18. 보조기술과의 호환성 : 탭메뉴 */
+.tab.type1{ width: 100%; }
+.tab.type1 > .menu > li { float: left; width: 33.33%; }
+.tab.type1 > .menu::after{ display: table; content: ''; clear: both; }
+.tab.type1 > .menu > li > a{ display: inline-block; width: 100%; padding: 0 10px; text-align: center; }
+.tab.type1 > .menu li > a.on{ font-weight: bold; border-bottom: 1px solid #333; }
+.tab.type1 > .content{ margin-top: 20px; }
+.tab.type1 > .content > .tab_con{ display: none; width: 100%; }
+.tab.type1 > .content > .tab_con:first-child{ display: block; }
+
+.tab.type2{ position: relative; width: 100%; }
+.tab.type2 > .menu{ position: relative; width: 100%; }
+.tab.type2 > .menu >  li { float: left; width: 33.33%; }
+.tab.type2 > .menu::after{ display: table; content: ''; clear: both; }
+.tab.type2 > .menu >  li > a{ display: inline-block; width: 100%; padding: 0 10px; text-align: center; outline-offset: -1px; }
+.tab.type2 > .menu >  li > a.on{ font-weight: bold; border-bottom: 1px solid #333; }
+.tab.type2 > .menu >  li > .tab_con{ position: absolute; top: 20px; left: 0; display: none; width: 100%; padding: 0 10px; }
+.tab.type2 > .menu >  li:first-child > .tab_con{ display: block; }
+
+
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+  .container > .section > .article > .aside > .cnt{ padding: 50px 3%; }
+  .sample_list{ margin: 30px 5% 0; }
+  .sample_board .col1{ width: 10%; }
+  .container .section{ display: block; }
+  .container > .section > .article > .aside > .cnt{  }
+}
+
+/* 모바일 가로 & 태블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+  .container > .section > .article > .aside > .cnt{ padding: 50px 5%; }
+  .sample_list{ margin: 30px 3% 0; }
+  .container{ padding: 0 10%; }
+  .container .section{ display: block; }
+}
+
+/* 태블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+  .container > .section > .article > .aside > .cnt{ padding: 50px 20%; }
+  .sample_list{ margin: 30px 10% 0; }
+}

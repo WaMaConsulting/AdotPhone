@@ -23,6 +23,20 @@ $(function(){
         tostOn();
      });
 
+     //12.입력도움2
+     $('.search button').on('click', function(e){
+         if($(this).hasClass('btn_search')){
+            $(this).hide().siblings('button').show().parents('.search').find('input').focus();
+         }else{
+            $(this).hide().siblings('button').show().focus();
+         }         
+     });
+
+     $('.search input').on('focusin', function(){
+         $(this).parents('.search').find('.btn_search').hide().siblings().show();
+     });
+
+     
      /* 18. 보조기술과의 호환성(체크박스) */
     $("#chbox_all").on("click", function(){
         var checked = $(this).is(':checked');

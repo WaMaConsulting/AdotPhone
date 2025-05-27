@@ -61,7 +61,7 @@ table.type1 th{ background-color:#eee; }
 
 
 /* 3. 색에 무관한 콘텐츠 인식 */
-.color_vision .url{ height: 400px; aspect-ratio: initial; }
+.color_vision .url{ height: 500px; aspect-ratio: initial; }
 
 
 /* 6. 알림 기능 */

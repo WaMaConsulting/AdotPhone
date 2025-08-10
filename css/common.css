@@ -77,6 +77,7 @@ table.type1 th{ background-color:#eee; }
 .focus .title button{ width: 20px; height: 20px; text-indent: -9999px; background: url('../img/7-3.jpg') no-repeat 50% 50%/10px auto; overflow: hidden; }
 .focus .title button.on{ background-image: url('../img/7-4.jpg'); }
 .focus .list{ padding: 5px 0; }
+.focus .list ul{ display: none; }
 .focus .list ul li{ display: flex; justify-content: space-between; height: 35px; }
 .focus .list ul li .address{ flex-grow: 1; }
 .focus .list ul li .address button{ display: flex; width: 100%; }
@@ -159,3 +160,4 @@ table.type1 th{ background-color:#eee; }
   .container > .section > .article > .aside > .cnt{ padding: 50px 20%; }
   .sample_list{ margin: 30px 10% 0; }
 }
+

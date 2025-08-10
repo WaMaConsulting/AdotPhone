@@ -124,11 +124,11 @@ table.type1 th{ background-color:#eee; }
 .tab.type1 > .menu::after{ display: table; content: ''; clear: both; }
 .tab.type1 > .menu > li > a{ display: inline-block; width: 100%; padding: 0 10px; text-align: center; }
 .tab.type1 > .menu li > a.on{ font-weight: bold; border-bottom: 1px solid #333; }
-.tab.type1 > .content{ margin-top: 20px; }
-.tab.type1 > .content > .tab_con{ display: none; width: 100%; }
-.tab.type1 > .content > .tab_con:first-child{ display: block; }
+.tab.type1 > .panel{ margin-top: 20px; }
+.tab.type1 > .panel > .tab_con{ display: none; width: 100%; }
+.tab.type1 > .panel > .tab_con:first-child{ display: block; }
 
-.tab.type2{ position: relative; width: 100%; }
+.tab.type2{ display: none; position: relative; width: 100%; }
 .tab.type2 > .menu{ position: relative; width: 100%; }
 .tab.type2 > .menu >  li { float: left; width: 33.33%; }
 .tab.type2 > .menu::after{ display: table; content: ''; clear: both; }
@@ -160,4 +160,5 @@ table.type1 th{ background-color:#eee; }
   .container > .section > .article > .aside > .cnt{ padding: 50px 20%; }
   .sample_list{ margin: 30px 10% 0; }
 }
+
 

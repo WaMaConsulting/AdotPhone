@@ -3,9 +3,9 @@ $(function(){
     //7. 초점
     $("#btn_toggle").bind("click", function(){
         if($(this).hasClass('on')){
-           $(this).html('연락처목록 열기').removeClass('on').attr('aria-expanded', 'false').parents('.focus').find('ul').hide();
+           $(this).removeClass('on').attr('aria-expanded', 'false').parents('.focus').find('ul').hide();
         }else{
-           $(this).html('연락처목록 닫기').addClass('on').attr('aria-expanded', 'true').parents('.focus').find('ul').show();
+           $(this).addClass('on').attr('aria-expanded', 'true').parents('.focus').find('ul').show();
         }                         
      });
 
@@ -96,5 +96,6 @@ $(function(){
 
 });
    
+
 
 

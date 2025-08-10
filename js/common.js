@@ -71,7 +71,6 @@ $(function(){
         $('body').find(selector).not('#dialog').not($('#dialog').find(selector)).removeAttr("tabindex aria-hidden");
      });
 
-
      /* 18. 보조기술과의 호환성(탭메뉴 - type1) */
      $('.tab.type1 > .menu > li > a').on("click", function(){
         var index=$(this).parent().index();
@@ -95,6 +94,7 @@ $(function(){
 
 });
    
+
 
 
 

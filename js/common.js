@@ -72,6 +72,16 @@ $(function(){
      });
 
 
+     /* 18. 보조기술과의 호환성(탭메뉴 - type1) */
+     $('.tab.type1 > .menu > li > a').on("click", function(){
+        var index=$(this).parent().index();
+        
+        $(this).parents(".menu").find("a").removeAttr("aria-selected").attr("aria-selected", "false").eq(index).attr("aria-selected", "true");         
+        $(this).parents(".menu").find("a").removeAttr("class").eq(index).attr("class", "on");         
+        $('.tab.type1 > .panel  > .tab_con').css('display', 'none').eq(index).css('display', 'block');
+
+     }); 
+
      /* 18. 보조기술과의 호환성(탭메뉴 - type2) */
     $('.tab.type2 > .menu > li > a').on("click", function(){
         var index=$(this).parent().index();
@@ -82,20 +92,10 @@ $(function(){
 
     });
 
-    
-     /* 18. 보조기술과의 호환성(탭메뉴 - type1) */
-     $('.tab.type1 > .menu > li > a').on("click", function(){
-        var index=$(this).parent().index();
-        
-        $(this).parents(".menu").find("a").removeAttr("aria-selected").attr("aria-selected", "false").eq(index).attr("aria-selected", "true");         
-        $(this).parents(".menu").find("a").removeAttr("class").eq(index).attr("class", "on");         
-        $('.tab.type1 > .content  > .tab_con').css('display', 'none').eq(index).css('display', 'block');
-
-     }); 
-
 
 });
    
+
 
 
 
